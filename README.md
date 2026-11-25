@@ -20,6 +20,8 @@ I build **web apps, Android & Flutter mobile apps, AI integrations and UI/UX des
 
 [![Hire me](https://img.shields.io/badge/Hire_me-View_portfolio_%26_send_a_project_brief-f7e463?style=for-the-badge&labelColor=0b1433)](https://bhargavkjani.github.io/BhargavKJani/)
 
+📧 [er.janibhargavk@gmail.com](mailto:er.janibhargavk@gmail.com) · 💬 [WhatsApp +91 76009 96526](https://wa.me/917600996526)
+
 </div>
 
 ---
