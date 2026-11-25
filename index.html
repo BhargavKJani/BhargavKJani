@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bhargav Jani · Hire me</title>
+<meta name="description" content="Bhargav Jani, senior software engineer in Ahmedabad. Android, Flutter, web apps and AI features for companies and clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600;800&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: confident, working engineer, plain talk to people who pay for software
+   IDEA: a launch control board, every product a lit ticket marked live
+   PICTURE: a phone and a browser window stacked, showing his real apps, with signal lines
+   COLOUR and TYPE: navy ground, cyan-to-yellow-to-red scale as accents; Red Hat Display 800 + Red Hat Text
+   LAYOUT: full-width navy bands, hero split title/picture, project grid, services, process, brief form */
+:root{color-scheme:light dark;--bg:#0b1433;--bg2:#111d46;--card:#16245a;--ink:#eef1ff;--mute:#aab3dd;--line:#2a3a78;--cy:#4fc1c6;--yl:#f7e463;--rd:#e8452c;--bl:#3b4fd8}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Red Hat Text",system-ui,sans-serif;overflow-x:clip}
+a{color:var(--cy)}
+h1,h2,h3{font-family:"Red Hat Display",system-ui,sans-serif;line-height:1.05;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,5.4vw,52px);font-weight:800}
+h2{font-size:clamp(28px,3.6vw,40px);font-weight:800;margin-bottom:12px}
+h3{font-size:20px;font-weight:600}
+p{margin:0 0 12px}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(36px,5vw,72px) max(5vw,16px)}
+.alt{background:var(--bg2)}
+nav{position:sticky;top:0;z-index:5;background:rgba(11,20,51,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;padding:12px max(5vw,16px)}
+nav b{font-family:"Red Hat Display",system-ui,sans-serif;font-size:19px;margin-right:auto}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;padding:8px 0}
+nav a:hover{color:var(--yl)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:999px;border:0;font:600 16px "Red Hat Text",system-ui,sans-serif;cursor:pointer;text-decoration:none;background:var(--yl);color:#0b1433}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--cy);outline-offset:2px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,56px);align-items:center}
+.lead{font-size:18px;color:var(--mute);max-width:36em;margin-top:18px}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:28px;color:var(--mute);font-size:15px}
+.stats b{display:block;color:var(--ink);font:800 26px "Red Hat Display",system-ui,sans-serif}
+.pic{position:relative;min-height:400px}
+.pic svg{position:absolute;inset:0;width:100%;height:100%}
+.sub{color:var(--mute);max-width:42em;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card .art{height:150px;position:relative}
+.card .art svg{position:absolute;inset:0;width:100%;height:100%}
+.card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card p{color:var(--mute);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.tags span{font-size:13px;padding:3px 10px;border-radius:999px;background:rgba(79,193,198,.14);color:var(--cy)}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--yl)}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--yl);box-shadow:0 0 0 4px rgba(247,228,99,.2);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(247,228,99,0)}}
+.links{display:flex;flex-wrap:wrap;gap:16px;font-weight:600}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px}
+.svc div{padding:22px;border-radius:18px;background:var(--bg);border:1px solid var(--line)}
+.svc svg{width:44px;height:44px;margin-bottom:12px}
+.svc p{color:var(--mute);margin:8px 0 0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:0;border-top:2px solid var(--line)}
+.steps div{padding:20px 20px 0 0;position:relative}
+.steps div::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--cy)}
+.steps p{color:var(--mute);margin-top:8px}
+.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px)}
+form{display:grid;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,3vw,28px)}
+label{display:grid;gap:6px;font-weight:600;font-size:15px}
+input,textarea,select{font:16px "Red Hat Text",system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:46px;width:100%}
+textarea{min-height:120px;resize:vertical}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:inline-flex;align-items:center;gap:8px;font-weight:500;padding:8px 14px;min-height:44px;border:1px solid var(--line);border-radius:999px;cursor:pointer}
+.chips input{width:18px;height:18px;min-height:0;accent-color:var(--yl)}
+#out{display:none;background:var(--bg);border:1px dashed var(--cy);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:15px}
+#msg{min-height:22px;color:var(--yl);font-weight:600;margin:0}
+.reach{display:grid;gap:10px;margin-top:22px}
+.reach a{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;color:var(--ink);text-decoration:none;min-height:52px}
+.reach a:hover{border-color:var(--cy)}
+footer{padding:28px max(5vw,16px);color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:860px){.hero,.contact{grid-template-columns:minmax(0,1fr)}.pic{min-height:320px}}
+@media(max-width:600px){nav .wrap a.hide{display:none}.two{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Bhargav Jani</b><a class="hide" href="#work">Work</a><a class="hide" href="#services">Services</a><a class="hide" href="#process">Process</a><a class="btn" href="#hire" style="min-height:40px">Hire me</a></div></nav>
+
+<header class="band"><div class="wrap hero">
+  <div>
+    <span class="live"><i></i>Available for new projects</span>
+    <h1 style="margin-top:14px">I build Android apps, web apps and AI features that ship.</h1>
+    <p class="lead">Senior software engineer in Ahmedabad, India. Kotlin, Flutter, Next.js and Claude AI. Every product below is live, tested and open source, so you can try my work before we talk.</p>
+    <div class="row"><a class="btn" href="#hire">Start a project</a><a class="btn ghost" href="#work">See live products</a></div>
+    <div class="stats"><div><b>5</b>AI web apps live</div><div><b>1</b>Android app in use</div><div><b>4</b>services</div></div>
+  </div>
+  <div class="pic" aria-hidden="true"><svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b4fd8"/><stop offset="1" stop-color="#4fc1c6"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7e463"/><stop offset="1" stop-color="#e8452c"/></linearGradient>
+      <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity=".45"/></filter>
+    </defs>
+    <g stroke="#2a3a78" stroke-width="1"><path d="M0 60H560M0 140H560M0 220H560M0 300H560M0 380H560M80 0V420M200 0V420M320 0V420M440 0V420" fill="none"/></g>
+    <g filter="url(#sh)">
+      <rect x="40" y="40" width="400" height="280" rx="16" fill="#16245a" stroke="#2a3a78"/>
+      <rect x="40" y="40" width="400" height="34" rx="16" fill="#1d2d6b"/>
+      <circle cx="64" cy="57" r="5" fill="#e8452c"/><circle cx="82" cy="57" r="5" fill="#f7e463"/><circle cx="100" cy="57" r="5" fill="#4fc1c6"/>
+      <rect x="130" y="49" width="200" height="16" rx="8" fill="#0b1433"/>
+      <rect x="64" y="96" width="160" height="14" rx="7" fill="#eef1ff"/>
+      <rect x="64" y="118" width="110" height="10" rx="5" fill="#aab3dd"/>
+      <g fill="url(#g1)"><rect x="64" y="236" width="28" height="60" rx="5"/><rect x="102" y="206" width="28" height="90" rx="5"/><rect x="140" y="222" width="28" height="74" rx="5"/><rect x="178" y="180" width="28" height="116" rx="5"/><rect x="216" y="160" width="28" height="136" rx="5" fill="url(#g2)"/></g>
+      <rect x="268" y="96" width="150" height="200" rx="12" fill="#0b1433"/>
+      <circle cx="343" cy="160" r="38" fill="none" stroke="#2a3a78" stroke-width="10"/>
+      <circle cx="343" cy="160" r="38" fill="none" stroke="#4fc1c6" stroke-width="10" stroke-dasharray="180 240" transform="rotate(-90 343 160)" stroke-linecap="round"/>
+      <rect x="290" y="222" width="106" height="10" rx="5" fill="#aab3dd"/><rect x="290" y="242" width="80" height="10" rx="5" fill="#2a3a78"/><rect x="290" y="268" width="106" height="16" rx="8" fill="#f7e463"/>
+    </g>
+    <g filter="url(#sh)">
+      <rect x="380" y="150" width="140" height="250" rx="24" fill="#0b1433" stroke="#eef1ff" stroke-opacity=".25" stroke-width="2"/>
+      <rect x="392" y="166" width="116" height="218" rx="14" fill="#16245a"/>
+      <rect x="430" y="156" width="40" height="5" rx="2.5" fill="#2a3a78"/>
+      <circle cx="450" cy="214" r="24" fill="url(#g2)"/>
+      <path d="M440 214l7 7 13-14" stroke="#0b1433" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="406" y="254" width="88" height="10" rx="5" fill="#eef1ff"/>
+      <rect x="406" y="274" width="62" height="8" rx="4" fill="#aab3dd"/>
+      <rect x="406" y="300" width="88" height="30" rx="10" fill="#1d2d6b"/><rect x="406" y="338" width="88" height="30" rx="10" fill="#1d2d6b"/>
+      <circle cx="420" cy="315" r="6" fill="#4fc1c6"/><circle cx="420" cy="353" r="6" fill="#f7e463"/>
+    </g>
+    <path d="M24 392q120-60 220-24t200-40" stroke="#f7e463" stroke-width="2" fill="none" stroke-dasharray="4 8"/>
+  </svg></div>
+</div></header>
+
+<section id="work" class="band alt"><div class="wrap">
+  <h2>Live products you can open right now</h2>
+  <p class="sub">Each web app has a demo mode that works without an API key, plus unit and end-to-end tests. Open one, click around, then read the code.</p>
+  <div class="grid" id="projects"></div>
+</div></section>
+
+<section id="services" class="band"><div class="wrap">
+  <h2>What I can build for you</h2>
+  <p class="sub">For startups, agencies and companies that need a dependable engineer, from first idea to the app store.</p>
+  <div class="svc" id="svc"></div>
+</div></section>
+
+<section id="process" class="band alt"><div class="wrap">
+  <h2>How we work together</h2>
+  <p class="sub">Clear steps, so you always know what is done and what is next.</p>
+  <div class="steps">
+    <div><h3>Share your idea</h3><p>Send the brief below. A rough idea is fine; I will ask the right questions.</p></div>
+    <div><h3>Plan and estimate</h3><p>You get a written scope with screens, features, timeline and a fixed or hourly quote.</p></div>
+    <div><h3>Build with weekly demos</h3><p>You see working software every week on a live link and give feedback as we go.</p></div>
+    <div><h3>Launch and support</h3><p>I deploy to the web, Play Store or App Store and stay on for fixes and new features.</p></div>
+  </div>
+</div></section>
+
+<section id="hire" class="band"><div class="wrap contact">
+  <div>
+    <h2>Tell me about your project</h2>
+    <p class="sub">Fill in the brief and send it straight to me. The more detail you give, the faster I can come back with a plan and a quote.</p>
+    <div class="reach" id="reach"></div>
+  </div>
+  <form id="brief" novalidate>
+    <div class="two">
+      <label>Your name<input id="f-name" required autocomplete="name"></label>
+      <label>Company<input id="f-co" autocomplete="organization"></label>
+    </div>
+    <label>Email or phone<input id="f-contact" required autocomplete="email"></label>
+    <div><div style="font-weight:600;font-size:15px;margin-bottom:6px">What do you need?</div>
+      <div class="chips" id="f-need"></div></div>
+    <div class="two">
+      <label>Budget<select id="f-budget"><option>Not sure yet</option><option>Under ₹50,000</option><option>₹50,000 – ₹2,00,000</option><option>₹2,00,000 – ₹5,00,000</option><option>Above ₹5,00,000</option><option>Hourly / monthly contract</option></select></label>
+      <label>Timeline<select id="f-time"><option>Flexible</option><option>Within 2 weeks</option><option>1 – 2 months</option><option>3 months or more</option></select></label>
+    </div>
+    <label>About the project<textarea id="f-about" required placeholder="What should it do, who will use it, any app or site you like?"></textarea></label>
+    <div class="row" style="margin-top:0"><button class="btn" type="submit" id="send">Send brief</button><button class="btn ghost" type="button" id="copy">Copy brief</button></div>
+    <p id="msg" role="status"></p>
+    <div id="out"></div>
+  </form>
+</div></section>
+
+<footer><div class="wrap">© <span id="yr"></span> Bhargav Jani · Ahmedabad, India · <a href="https://github.com/BhargavKJani">github.com/BhargavKJani</a></div></footer>
+
+<script>
+{
+// Contact details: fill these in and every button on the page uses them.
+const EMAIL = "";        // e.g. "you@gmail.com"
+const WHATSAPP = "";     // country code + number, digits only, e.g. "919876543210"
+const LINKEDIN = "";     // full profile URL
+const GH = "https://github.com/BhargavKJani";
+
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+const P = [
+  {n:"InterviewAI", t:"AI interview simulator", d:"Voice or text mock interviews with an AI interviewer. Answers are scored on clarity, depth and relevance, with report cards and a progress dashboard.", tags:["Next.js","TypeScript","Claude AI","Voice"], live:"https://ai-interview-simulator-eta-seven.vercel.app", code:"ai-interview-simulator", art:"mic"},
+  {n:"Moneytwin", t:"AI finance tracker", d:"Upload a bank statement and get auto-categorised spending, a next-month forecast, a what-if simulator and AI coaching. Data stays in the browser.", tags:["Next.js","React 19","Claude AI","Forecasting"], live:"https://ai-finance-tracker-neon.vercel.app", code:"ai-finance-tracker", art:"chart"},
+  {n:"Virtual Try-On Studio", t:"E-commerce with live try-on", d:"A fashion storefront where shoppers try glasses, hats and earrings live through their webcam, with face tracking in the browser.", tags:["Next.js","MediaPipe","Computer vision","E-commerce"], live:"https://virtual-tryon-studio-murex.vercel.app", code:"virtual-tryon-studio", art:"face"},
+  {n:"Collab Board", t:"Real-time AI whiteboard", d:"A shared whiteboard for teams that syncs live between users, with AI that tidies and organises the board for you.", tags:["Next.js","Yjs realtime","Claude AI","WebSockets"], live:"https://ai-collab-whiteboard.vercel.app", code:"ai-collab-whiteboard", art:"board"},
+  {n:"PulseForm", t:"AI fitness coach", d:"Tracks your body pose through the camera, counts reps, checks your form and gives AI coaching on your workouts.", tags:["Next.js","MediaPipe Pose","Claude AI","Health"], live:"https://ai-fitness-coach-drab-six.vercel.app", code:"ai-fitness-coach", art:"pulse"},
+  {n:"Gayatri Gaushala", t:"Android app for a real organisation", d:"A native Android app in Kotlin and Jetpack Compose with an admin panel, built in Gujarati for a gaushala and shared as a test build ahead of its Play Store release.", tags:["Kotlin","Jetpack Compose","Android","Admin panel"], live:"https://github.com/BhargavKJani/gayatri-gaushala-app", code:"gayatri-gaushala-app", art:"phone", liveLabel:"Download APK"}
+];
+
+const ART = {
+  mic:`<rect width="400" height="150" fill="#3b4fd8"/><g fill="#0b1433" opacity=".35">${[...Array(28)].map((_,i)=>{const h=18+Math.abs(Math.sin(i*1.3))*80;return `<rect x="${14+i*14}" y="${75-h/2}" width="8" height="${h}" rx="4"/>`}).join("")}</g><rect x="176" y="34" width="48" height="66" rx="24" fill="#f7e463"/><path d="M164 78a36 36 0 0 0 72 0M200 114v14" stroke="#eef1ff" stroke-width="6" fill="none" stroke-linecap="round"/>`,
+  chart:`<rect width="400" height="150" fill="#4fc1c6"/><path d="M0 120L60 100L120 108L180 70L240 82L300 40L400 30V150H0Z" fill="#0b1433" opacity=".25"/><path d="M0 120L60 100L120 108L180 70L240 82L300 40" stroke="#0b1433" stroke-width="5" fill="none" stroke-linejoin="round"/><path d="M300 40L400 22" stroke="#0b1433" stroke-width="5" stroke-dasharray="8 8"/><circle cx="300" cy="40" r="9" fill="#f7e463" stroke="#0b1433" stroke-width="4"/>`,
+  face:`<rect width="400" height="150" fill="#e8452c"/><circle cx="200" cy="90" r="56" fill="#f7e463"/><path d="M144 46q56-40 112 0z" fill="#0b1433"/><rect x="120" y="44" width="160" height="10" rx="5" fill="#0b1433"/><g fill="none" stroke="#0b1433" stroke-width="6"><circle cx="178" cy="86" r="16"/><circle cx="222" cy="86" r="16"/><path d="M194 86h12"/></g><path d="M184 118q16 10 32 0" stroke="#0b1433" stroke-width="5" fill="none" stroke-linecap="round"/>`,
+  board:`<rect width="400" height="150" fill="#f7e463"/><g stroke="#0b1433" stroke-opacity=".15"><path d="M0 30H400M0 60H400M0 90H400M0 120H400M40 0V150M80 0V150M120 0V150M160 0V150M200 0V150M240 0V150M280 0V150M320 0V150M360 0V150"/></g><rect x="60" y="34" width="78" height="66" rx="6" fill="#4fc1c6" transform="rotate(-4 99 67)"/><rect x="162" y="48" width="78" height="66" rx="6" fill="#e8452c" transform="rotate(3 201 81)"/><rect x="264" y="30" width="78" height="66" rx="6" fill="#3b4fd8" transform="rotate(-2 303 63)"/><path d="M138 70q12 0 24 10M240 80q12-14 24-20" stroke="#0b1433" stroke-width="3" fill="none"/>`,
+  pulse:`<rect width="400" height="150" fill="#0b1433"/><path d="M0 80H120L140 40L165 120L185 60L200 80H400" stroke="#4fc1c6" stroke-width="5" fill="none" stroke-linejoin="round"/><circle cx="300" cy="44" r="12" fill="#f7e463"/><path d="M300 56v40M300 70l-24 12M300 70l24-16M300 96l-18 34M300 96l20 34" stroke="#f7e463" stroke-width="7" stroke-linecap="round"/>`,
+  phone:`<rect width="400" height="150" fill="#16245a"/><rect x="160" y="14" width="80" height="150" rx="14" fill="#0b1433" stroke="#4fc1c6" stroke-width="3"/><rect x="172" y="34" width="56" height="12" rx="4" fill="#f7e463"/><rect x="172" y="56" width="56" height="26" rx="6" fill="#3b4fd8"/><rect x="172" y="90" width="56" height="26" rx="6" fill="#3b4fd8"/><path d="M60 110q30-50 60-10M280 110q30-50 60-10" stroke="#4fc1c6" stroke-width="3" fill="none" opacity=".6"/>`
+};
+
+document.getElementById("projects").innerHTML = P.map(p => `
+  <article class="card">
+    <div class="art"><svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[p.art]}</svg></div>
+    <div class="body">
+      <span class="live"><i></i>Live</span>
+      <h3>${esc(p.n)}</h3>
+      <div style="font-weight:600;color:var(--ink)">${esc(p.t)}</div>
+      <p>${esc(p.d)}</p>
+      <div class="tags">${p.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div>
+      <div class="links"><a href="${esc(p.live)}" target="_blank" rel="noopener">${esc(p.liveLabel||"Open live demo")} →</a><a href="${GH}/${esc(p.code)}" target="_blank" rel="noopener">Code</a></div>
+    </div>
+  </article>`).join("");
+
+const S = [
+  {n:"Web apps", d:"Fast, modern websites and full web platforms in Next.js, React and TypeScript: dashboards, portals, SaaS products and e-commerce.", c:"#4fc1c6", i:`<rect x="4" y="8" width="36" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M4 16h36" stroke="currentColor" stroke-width="3"/>`},
+  {n:"Mobile apps", d:"Native Android in Kotlin and Jetpack Compose, or one Flutter codebase for Android and iOS, ready for the Play Store and App Store.", c:"#f7e463", i:`<rect x="12" y="4" width="20" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="22" cy="33" r="2" fill="currentColor"/>`},
+  {n:"AI integrations", d:"Chatbots, document reading, voice assistants, smart search and camera features added to your existing product with Claude and other AI models.", c:"#e8452c", i:`<path d="M22 4l4 12 12 4-12 4-4 12-4-12-12-4 12-4z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>`},
+  {n:"UI/UX design", d:"Clean screens and user flows designed before we build, so your app is easy to use and looks professional from day one.", c:"#8fa0ff", i:`<circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="20" y="20" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>`}
+];
+document.getElementById("svc").innerHTML = S.map(s=>`<div><svg viewBox="0 0 44 44" style="color:${s.c}" aria-hidden="true">${s.i}</svg><h3>${s.n}</h3><p>${s.d}</p></div>`).join("");
+document.getElementById("f-need").innerHTML = S.map((s,i)=>`<label><input type="checkbox" value="${s.n}"${i==0?" checked":""}>${s.n}</label>`).join("");
+
+const reach = [];
+if (EMAIL) reach.push(`<a href="mailto:${esc(EMAIL)}">✉ <span>Email · ${esc(EMAIL)}</span></a>`);
+if (WHATSAPP) reach.push(`<a href="https://wa.me/${esc(WHATSAPP)}" target="_blank" rel="noopener">● <span>WhatsApp · +${esc(WHATSAPP)}</span></a>`);
+if (LINKEDIN) reach.push(`<a href="${esc(LINKEDIN)}" target="_blank" rel="noopener">in <span>LinkedIn</span></a>`);
+reach.push(`<a href="${GH}" target="_blank" rel="noopener">⌘ <span>GitHub · BhargavKJani</span></a>`);
+document.getElementById("reach").innerHTML = reach.join("");
+
+const $ = id => document.getElementById(id);
+const msg = $("msg"), out = $("out");
+const brief = () => {
+  const need = [...document.querySelectorAll("#f-need input:checked")].map(x=>x.value).join(", ") || "Not chosen";
+  return `New project brief\n\nName: ${$("f-name").value.trim()}\nCompany: ${$("f-co").value.trim() || "-"}\nContact: ${$("f-contact").value.trim()}\nNeeds: ${need}\nBudget: ${$("f-budget").value}\nTimeline: ${$("f-time").value}\n\nAbout the project:\n${$("f-about").value.trim()}`;
+};
+const valid = () => {
+  for (const id of ["f-name","f-contact","f-about"]) if (!$(id).value.trim()) { $(id).focus(); msg.textContent = "Please fill in your name, contact and a few lines about the project."; return false; }
+  return true;
+};
+const show = t => { out.textContent = t; out.style.display = "block"; };
+
+if (!EMAIL && !WHATSAPP) $("send").style.display = "none";
+$("brief").addEventListener("submit", e => {
+  e.preventDefault();
+  if (!valid()) return;
+  const t = brief();
+  show(t);
+  if (WHATSAPP) location.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+  else if (EMAIL) location.href = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enquiry from " + $("f-name").value.trim())}&body=${encodeURIComponent(t)}`;
+  msg.textContent = "Your brief is ready. If no app opened, copy it below and send it to me.";
+});
+$("copy").addEventListener("click", async () => {
+  if (!valid()) return;
+  const t = brief(); show(t);
+  try { await navigator.clipboard.writeText(t); msg.textContent = "Brief copied. Paste it into a message to me."; }
+  catch { msg.textContent = "Select the brief below and copy it."; }
+});
+$("yr").textContent = new Date().getFullYear();
+}
+</script>
+</body>
+</html>

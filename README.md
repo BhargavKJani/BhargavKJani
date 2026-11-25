@@ -14,6 +14,12 @@
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_AI-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 
+### 💼 Available for freelance and contract projects
+
+I build **web apps, Android & Flutter mobile apps, AI integrations and UI/UX designs** for companies and clients.
+
+[![Hire me](https://img.shields.io/badge/Hire_me-View_portfolio_%26_send_a_project_brief-f7e463?style=for-the-badge&labelColor=0b1433)](https://bhargavkjani.github.io/BhargavKJani/)
+
 </div>
 
 ---
